@@ -1,0 +1,28 @@
+extends change-index
+
+block content3-faq
+	table.table.table-striped.table-bordered
+		tr
+			td faq
+			td 
+				form(enctype="multipart/form-data" method="post" action="/backstage/change/index/faq")#form-faq
+					input#title-faq(type="text" name="title" placeholder="标题")
+					div#item-faq-1.item-faq
+						input(type="text" name="question" placeholder="小标题")
+						input(type="text" name="p1" placeholder="内容")
+						input(type="text" name="p2" placeholder="内容")
+						input(type="text" name="p3" placeholder="内容")
+						input(type="file" name="faq-img")
+					div#item-faq-2.item-faq
+						input(type="text" name="question" placeholder="小标题")
+						input(type="text" name="p1" placeholder="内容")
+						input(type="text" name="p2" placeholder="内容")
+						input(type="text" name="p3" placeholder="内容")
+						input(type="file" name="faq-img")
+					div#item-faq-3.item-faq
+						input(type="text" name="question" placeholder="小标题")
+						input(type="text" name="p1" placeholder="内容")
+						input(type="text" name="p2" placeholder="内容")
+						input(type="text" name="p3" placeholder="内容")
+						input(type="file" name="faq-img")
+					input#submit-faq(type="submit" value="提交")

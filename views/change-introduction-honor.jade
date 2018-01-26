@@ -1,0 +1,27 @@
+extends change-introduction
+
+block content3-honor
+	table.table.table-striped.table-bordered
+		tr
+			td honor
+			td 
+				form(enctype="multipart/form-data" method="post" action="/backstage/change/introduction/honor").form-honor
+					
+					div#item-honor-title
+						input(type="text" name="title" placeholder="标题")
+						input(type="text" name="desc1" placeholder="副标题1")
+						input(type="text" name="desc2" placeholder="副标题2")
+					div#item-honor-images
+						input(type="file" name="img")
+						input(type="text" name="images_title" placeholder="描述1")
+					div#item-honor-images
+						input(type="file" name="img")
+						input(type="text" name="images_title" placeholder="描述2")
+					div#item-honor-images
+						input(type="file" name="img")
+						input(type="text" name="images_title" placeholder="描述3")
+					div#item-honor-images
+						input(type="file" name="img")
+						input(type="text" name="images_title" placeholder="描述4")
+						
+					input#form-honor-submit(type="submit" value="提交")

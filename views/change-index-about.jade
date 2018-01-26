@@ -1,0 +1,17 @@
+extends change-index
+
+block content3-about
+	table.table.table-striped.table-bordered
+		tr
+			td about
+			td 
+				form(enctype="multipart/form-data" method="post" action="/backstage/change/index/about")#form-about
+					input(type="text" name="title" placeholder="标题")
+					input(type="text" name="li" placeholder="列表1")
+					input(type="text" name="li" placeholder="列表2")
+					input(type="text" name="li" placeholder="列表3")
+					input(type="text" name="li" placeholder="列表4")
+					input(type="text" name="li" placeholder="列表5")
+					input(type="text" name="button" placeholder="按钮")
+					input(type="file" name="robot")
+					input(type="submit" value="提交")

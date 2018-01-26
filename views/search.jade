@@ -1,0 +1,23 @@
+extends backstage
+
+block content2
+	div#search 
+		h4#search-title 预约成员
+		table.table.table-striped.table-bordered
+			tr
+				td 标识
+				td 姓名
+				td 年龄
+				td 电话
+				td 时间
+				td 操作
+			each item in data
+				tr
+					td= item.mark
+					td= item.name
+					td= item.age
+					td= item.tel
+					td= item.time
+					td 
+						button#search-button.btn.btn-success(onclick="markAjax(#{item.tel})") 标记
+	script(src="/javascripts/search.js")

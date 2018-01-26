@@ -1,0 +1,10 @@
+extends change-course
+
+block content3-img
+	table.table.table-striped.table-bordered
+		tr
+			td img
+			td 
+				form(enctype="multipart/form-data" method="post" action="/backstage/change/course/img").form-course
+					input(type="file" name="img")
+					input#form-course-submit(type="submit" value="提交")

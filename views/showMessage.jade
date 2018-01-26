@@ -1,0 +1,18 @@
+extends layout
+
+block content
+	div#show 
+		h4#show-title 预约成功！
+		table.table.table-striped.table-bordered
+			tr
+				td 标识
+				td 姓名
+				td 年龄
+				td 电话
+				td 时间
+			tr
+				td #{mark}
+				td #{name}
+				td #{age}
+				td #{tel}
+				td #{time}

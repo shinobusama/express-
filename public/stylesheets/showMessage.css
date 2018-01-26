@@ -1,0 +1,30 @@
+#show{
+	margin-top: 30px;
+	margin-bottom: 30px;
+	margin-left: 15%;
+	margin-right: 15%;
+	min-height: 600px;
+}
+#show-title{
+	margin-bottom: 50px;
+	padding: 20px;
+	border-left: 5px solid #999;
+	box-shadow: 0 0 5px #999;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	text-align: center;
+	line-height: 24px;
+	font-size: 24px;
+}
+@media screen and (max-width: 768px){
+	#show{
+		margin-top: 30px;
+		margin-bottom: 30px;
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+	#show-title{
+		line-height: 20px;
+		font-size: 20px;
+	}
+}

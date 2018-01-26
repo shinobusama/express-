@@ -1,0 +1,21 @@
+doctype html
+html
+	head
+		title #{title}
+		meta(charset="utf-8")
+		meta(http-equiv="X-UA-Compatible" content="IE=edge")
+		meta(name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0, user-scalable=no")
+		link(rel='stylesheet', href='/stylesheets/style.css')
+		link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
+		link(rel='stylesheet', href='/stylesheets/login.css')
+body
+	div#login
+		div#login-table
+			form#login-form(method='post' action='/backstage')
+				div.form-group
+					label(for="exampleInputName") 用戶名
+					input#exampleInputName.form-control(type="text" placeholder="username" name="username")
+				div.form-group
+					label(for="exampleInputYear") 密码
+					input.form-control#exampleInputYear(type="password" placeholder="password" name="password")
+				<button type="submit" class="btn btn-default">登录</button>

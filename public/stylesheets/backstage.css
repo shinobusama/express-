@@ -1,0 +1,31 @@
+.navbar{
+	margin-bottom: 0;
+	border:none;
+	background-color: #9BC7CE;
+}
+.nav-left,.nav-right{
+	display: inline-block;
+	height: 50px;
+	padding: 0 20px;
+	line-height: 50px;
+	color: #FFF;
+}
+.nav-left{
+	float: left;
+}
+.nav-right{
+	float: right;
+}
+#left-title{
+	text-decoration: none;
+}
+#right-title{
+	text-decoration: none;
+}
+#search-title{
+	text-align: center;
+	font-size: 20px;
+}
+#search table tr td{
+	vertical-align: middle;
+}

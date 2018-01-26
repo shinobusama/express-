@@ -1,0 +1,109 @@
+extends layout
+
+block content
+	div#carousel-example-generic.carousel.slide(data-ride="carousel" data-interval="5000")
+		ol.carousel-indicators
+			li.active(data-target="#carousel-example-generic" data-slide-to="0")
+			li(data-target="#carousel-example-generic" data-slide-to="1")
+			li(data-target="#carousel-example-generic" data-slide-to="2")
+		div.carousel-inner(role="listbox")
+			div.item.active
+				img.img-responsive(src="#{banner.banner[0].img}")
+				div.carousel-caption
+			div.item
+				img.img-responsive(src="#{banner.banner[1].img}")
+				div.carousel-caption
+			div.item
+				img.img-responsive(src="#{banner.banner[2].img}")
+				div.carousel-caption
+		a.left.carousel-control(href="#carousel-example-generic" role="button" data-slide="prev")
+			span.glyphicon.glyphicon-chevron-left(aria-hidden="true")
+			span.sr-only Previous
+		a.right.carousel-control(href="#carousel-example-generic" role="button" data-slide="next")
+			span.glyphicon.glyphicon-chevron-right(aria-hidden="true")
+			span.sr-only Next
+	
+	div#introduction.container
+		div.row
+			div.col-sm-12#introduction-left
+				div.introduction-h1 #{introduction.introduction.h1}
+				div.introduction-desc
+					li #{introduction.introduction.desc[0].li}
+					li #{introduction.introduction.desc[1].li}
+					li #{introduction.introduction.desc[2].li}
+					li #{introduction.introduction.desc[3].li}
+					li #{introduction.introduction.desc[4].li}
+				a.introduction-button #{introduction.introduction.button}
+			div#introduction-right
+				img.robot.img-responsive(src="#{introduction.introduction.robot}")
+
+	div#course
+		div.course-content.container
+			div.row
+				div.course-title 
+					span #{course.course.title}
+			div.row.course-item-1
+				div.course-item.col-sm-6
+					div.item-content
+						img(src="#{course.course.item[0].img}")
+						h4 #{course.course.item[0].h4}
+						p #{course.course.item[0].p}
+				div.course-item.col-sm-6
+					div.item-content
+						img(src="#{course.course.item[1].img}")
+						h4 #{course.course.item[1].h4}
+						p #{course.course.item[1].p}
+			div.row.course-item-2
+				div.course-item.col-sm-6
+					div.item-content
+						img(src="#{course.course.item[2].img}")
+						h4 #{course.course.item[2].h4}
+						p #{course.course.item[2].p}
+				div.course-item.col-sm-6
+					div.item-content
+						img(src="#{course.course.item[3].img}")
+						h4 #{course.course.item[3].h4}
+						p #{course.course.item[3].p}
+
+	div#faq
+		div.container
+			div.row
+				div.col-md-12
+					div.faq-title 
+						span #{faq.faq.title}
+					div.faq-content
+						div.faq-1(data-toggle="collapse.in" data-target="#collapseExample") #{faq.faq.item[0].question}
+						div.collapse.in#collapseExample
+							div.row
+								div.col-sm-6.faq-1-t
+									p #{faq.faq.item[0].p1}
+									br
+									p #{faq.faq.item[0].p2}
+									br
+									p #{faq.faq.item[0].p3}
+								div.col-sm-6.faq-1-p
+									img.img-responsive(src="#{faq.faq.item[0].img}")
+						div.faq-2(data-toggle="collapse" data-target="#collapseExample2") #{faq.faq.item[1].question}
+						div.collapse#collapseExample2
+							div.row
+								div.col-sm-12
+									p #{faq.faq.item[1].p1}
+									br
+									p #{faq.faq.item[1].p2}
+									p #{faq.faq.item[1].p3}
+									br
+									img.img-responsive(src="#{faq.faq.item[1].img}")
+						div.faq-3(data-toggle="collapse" data-target="#collapseExample3") #{faq.faq.item[2].question}
+						div.collapse#collapseExample3
+							div.row
+								div.col-sm-12
+									p #{faq.faq.item[2].p1}
+									br
+									p #{faq.faq.item[2].p2}
+									br
+									p #{faq.faq.item[2].p3}
+									br
+									img.img-responsive(src="#{faq.faq.item[1].img}")
+	script(src="javascripts/jquery.min.js")
+	script(src="javascripts/bootstrap.min.js")
+	script(src="javascripts/index.js")

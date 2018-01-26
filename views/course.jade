@@ -1,0 +1,46 @@
+extends layout
+
+block content
+	div#cour
+		img.img-responsive.cour-banner(src="#{img.img}")
+		div.cour-content
+			div.cour-title 课程体系
+			ul.cour-ul.clearfix
+				li.cour-li 课程优势
+				li.cour-li 动手能力
+				li.cour-li 想象力
+				li.cour-li 科普知识
+				li.cour-li 逻辑思维
+				li.cour-li 探究精神
+				li.cour-li 创造力
+				li.cour-li 沟通能力
+				li.cour-li 挫折教育
+				li.cour-li 分类排序
+			div.cour-all.clearfix
+				div.cour-all-itme.col-sm-3 
+					h4 #{span.all[0].h4}
+					p #{span.all[0].p}
+				div.cour-all-itme.col-sm-3 
+					h4 #{span.all[1].h4}
+					p #{span.all[1].p}
+				div.cour-all-itme.col-sm-3 
+					h4 #{span.all[2].h4}
+					p #{span.all[2].p}
+				div.cour-all-itme.col-sm-3 
+					h4 #{span.all[3].h4}
+					p #{span.all[3].p}
+			div.cour-item.clearfix
+				div.cour-item-img.col-sm-4
+					img.img-responsive(src="#{li.item[0].img}")
+				div.cour-item-desc.col-sm-8
+					p #{li.item[0].p}
+			div.cour-item.clearfix
+				div.cour-item-img.col-sm-4
+					img.img-responsive(src="#{li.item[1].img}")
+				div.cour-item-desc.col-sm-8
+					p #{li.item[1].p}
+			div.cour-item.clearfix
+				div.cour-item-img.col-sm-4
+					img.img-responsive(src="#{li.item[2].img}")
+				div.cour-item-desc.col-sm-8
+					p #{li.item[2].p}

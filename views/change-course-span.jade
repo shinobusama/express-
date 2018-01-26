@@ -1,0 +1,21 @@
+extends change-course
+
+block content3-span
+	table.table.table-striped.table-bordered
+		tr
+			td span
+			td 
+				form(method="post" action="/backstage/change/course/span").form-course
+					div#item-course-span
+						input(type="text" name="h4" placeholder="标题")
+						input(type="text" name="p" placeholder="内容")
+					div#item-course-span
+						input(type="text" name="h4" placeholder="标题")
+						input(type="text" name="p" placeholder="内容")
+					div#item-course-span
+						input(type="text" name="h4" placeholder="标题")
+						input(type="text" name="p" placeholder="内容")
+					div#item-course-span
+						input(type="text" name="h4" placeholder="标题")
+						input(type="text" name="p" placeholder="内容")
+					input#form-course-submit(type="submit" value="提交")

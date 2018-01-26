@@ -1,0 +1,18 @@
+extends change-course
+
+block content3-li
+	table.table.table-striped.table-bordered
+		tr
+			td li
+			td 
+				form(enctype="multipart/form-data" method="post" action="/backstage/change/course/li").form-course
+					div#item-course-li
+						input(type="file" name="img")
+						input(type="text" name="p" placeholder="内容")
+					div#item-course-li
+						input(type="file" name="img")
+						input(type="text" name="p" placeholder="内容")
+					div#item-course-li
+						input(type="file" name="img")
+						input(type="text" name="p" placeholder="内容")
+					input#form-course-submit(type="submit" value="提交")

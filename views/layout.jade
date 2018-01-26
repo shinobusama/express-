@@ -1,0 +1,30 @@
+doctype html
+html
+	head
+		title #{title}
+		meta(charset="utf-8")
+		meta(http-equiv="X-UA-Compatible" content="IE=edge")
+		meta(name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0, user-scalable=no")
+		link(rel='stylesheet', href='/stylesheets/style.css')
+		link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
+		link(rel='stylesheet', href='/stylesheets/index.css')
+		link(rel='stylesheet', href='/stylesheets/introduction.css')
+		link(rel='stylesheet', href='/stylesheets/course.css')
+		link(rel='stylesheet', href='/stylesheets/signup.css')
+		link(rel='stylesheet', href='/stylesheets/showMessage.css')
+		link(rel='stylesheet', href='/stylesheets/login.css')
+		link(rel='stylesheet', href='/stylesheets/bootstrapValidator.min.css')
+body
+	div#header.container-fluid
+		div#loading
+		div#header-content.clearfix
+			span.header-tel 
+				a(href="/signup") 预约咨询
+			span.header-tel 
+				a(href="/course") 课程介绍
+			span.header-tel 
+				a(href="/introduction") 学校簡介
+			a.header-title(href="/") LEGO
+	block content
+	div#footer
+		p © 2017 All rights reserved. SendPulse ®

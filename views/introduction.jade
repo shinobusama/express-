@@ -1,0 +1,67 @@
+extends layout
+
+block content
+	div#intr
+		img.img-responsive.intr-banner(src="#{history.item1.img}")
+		div#intr-content
+			div.intr-content-item.clearfix
+				div.intr-item-title #{history.item1.title}
+				p.intr-item-desc-1 #{history.item1.desc1}
+				p.intr-item-desc-2 #{history.item1.desc2}
+				div.intr-item-desc-3 
+					li #{history.item1.desc3[0].li}
+					li #{history.item1.desc3[1].li}
+					li #{history.item1.desc3[2].li}
+					li #{history.item1.desc3[3].li}
+					li #{history.item1.desc3[4].li}
+			div.intr-content-item.clearfix
+				div.intr-item-title #{team.item2.title}
+				p.intr-item-desc-1 #{team.item2.desc1}
+				p.intr-item-desc-2 #{team.item2.desc2}
+				div.intr-item-imgs.clearfix
+					div.intr-item-img-title.col-sm-4
+						img.intr-item-img.img-responsive(src="#{team.item2.imgs[0].img}")
+						p.intr-item-img-desc #{team.item2.imgs[0].title}
+					div.intr-item-img-title.col-sm-4
+						img.intr-item-img.img-responsive(src="#{team.item2.imgs[1].img}")
+						p.intr-item-img-desc #{team.item2.imgs[1].title}
+					div.intr-item-img-title.col-sm-4
+						img.intr-item-img.img-responsive(src="#{team.item2.imgs[2].img}")
+						p.intr-item-img-desc #{team.item2.imgs[2].title}
+					div.intr-item-img-title.col-sm-4
+						img.intr-item-img.img-responsive(src="#{team.item2.imgs[3].img}")
+						p.intr-item-img-desc #{team.item2.imgs[3].title}
+					div.intr-item-img-title.col-sm-4
+						img.intr-item-img.img-responsive(src="#{team.item2.imgs[4].img}")
+						p.intr-item-img-desc #{team.item2.imgs[4].title}
+					div.intr-item-img-title.col-sm-4
+						img.intr-item-img.img-responsive(src="#{team.item2.imgs[5].img}")
+						p.intr-item-img-desc #{team.item2.imgs[5].title}
+			div.intr-content-item.clearfix
+				div.intr-item-title #{honor.item3.title}
+				p.intr-item-desc-1 #{honor.item3.desc1}
+				p.intr-item-desc-2 #{honor.item3.desc2}
+				div.intr-item-imgs.clearfix
+					div.intr-item-img-title.col-sm-6
+						img.intr-item-img.img-responsive(src="#{honor.item3.imgs[0].img}")
+						p.intr-item-img-desc #{honor.item3.imgs[0].title}
+					div.intr-item-img-title.col-sm-6
+						img.intr-item-img.img-responsive(src="#{honor.item3.imgs[1].img}")
+						p.intr-item-img-desc #{honor.item3.imgs[1].title}
+					div.intr-item-img-title.col-sm-6
+						img.intr-item-img.img-responsive(src="#{honor.item3.imgs[2].img}")
+						p.intr-item-img-desc #{honor.item3.imgs[2].title}
+					div.intr-item-img-title.col-sm-6
+						img.intr-item-img.img-responsive(src="#{honor.item3.imgs[3].img}")
+						p.intr-item-img-desc #{honor.item3.imgs[3].title}
+			div.intr-content-item.clearfix
+				div.intr-item-title #{idea.item4.title}
+				p.intr-item-desc-1 #{idea.item4.desc1}
+				p.intr-item-desc-2 #{idea.item4.desc2}
+				div.intr-item-desc-3 
+					li #{idea.item4.desc3[0].li}
+					li #{idea.item4.desc3[1].li}
+					li #{idea.item4.desc3[2].li}
+					li #{idea.item4.desc3[3].li}
+					li #{idea.item4.desc3[4].li}
+			
